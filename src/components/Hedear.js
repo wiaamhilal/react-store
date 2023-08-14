@@ -6,7 +6,7 @@ import { useShopingCard } from './TextMethods'
 const Hedear = () => {
   const {openCard,ItmesQuantinty} = useShopingCard()
   return (
-    <div className='shadow-sm fixed-top bg-white'>
+    <div className='shadow fixed-top bg-white'>
     <Navbar className='container'>
         <Nav>
             <Nav.Link to="/" as={NavLink} >Home</Nav.Link>

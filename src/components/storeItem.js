@@ -6,7 +6,7 @@ const StoreItem = ({id,urlImg,name,price}) => {
     const {IncreaceItmeQuantity,GetCardQuantity,decreaceItmeQuantity ,RemoveAll} = useShopingCard() 
    const quentity = GetCardQuantity(id)
   return (
-    <Card  className='shadow-sm border-0'>
+    <Card  className='shadow border-0'>
         <Card.Img src={urlImg} variant='top' style={{height:"250px",objectFit:"contain"}}/>
         <Card.Body>
             <Card.Title className='d-flex justify-content-between align-items-center p-1'>
