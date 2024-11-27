@@ -1,27 +1,19 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Signin from "./components/Signin";
+import Home from "./components/Home";
+import Video from "./components/Video";
 
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './components/Home';
-import Store from './components/Store';
-import About from './components/About';
-import Hedear from './components/Hedear';
-import ShopingCardProvider from './components/TextMethods';
-
-function App() {
+const App = () => {
   return (
-    <ShopingCardProvider>
-    <Hedear />
-    <div className="App bg-light">
-        <div>        
-        <Routes>
-          <Route path='/' element= {<Home />} />
-          <Route path='/Store' element= {<Store />} />
-          <Route path='/About' element= {<About />} />
-        </Routes>
-      </div>
+    <div>
+      <Routes>
+        <Route path="/signin" Component={Signin} />
+        <Route path="/" Component={Home} />
+        <Route path="/video" Component={Video} />
+      </Routes>
     </div>
-    </ShopingCardProvider>
   );
-}
+};
 
 export default App;
